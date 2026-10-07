@@ -13,3 +13,5 @@ DOMAIN-KEYWORD,muse
 DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,metaaivm.com
 DOMAIN-KEYWORD,metaai
+# Meta AI 专属账号鉴权接口
+DOMAIN,graph.facebook.com
