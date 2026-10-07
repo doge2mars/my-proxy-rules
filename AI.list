@@ -1,7 +1,7 @@
 # ====================================================
 # 个人私有全能 AI 平台终极分流规则库 (自动同步合并版)
 # 数据源: blackmatrix7 (OpenAI + Claude + Gemini + Copilot) + 私人专属补丁
-# 规则总条数: 77 条
+# 规则总条数: 82 条
 # ====================================================
 
 DOMAIN,ai.google.dev
@@ -34,6 +34,8 @@ DOMAIN-KEYWORD,cloudcode
 DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
+DOMAIN-KEYWORD,metaai
+DOMAIN-KEYWORD,muse
 DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,openaicom-api
 DOMAIN-SUFFIX,ai.com
@@ -64,6 +66,9 @@ DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN-SUFFIX,livekit.cloud
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,metaaivm.com
+DOMAIN-SUFFIX,muse.ai
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,observeit.net
