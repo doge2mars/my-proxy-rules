@@ -6,3 +6,10 @@ DOMAIN-KEYWORD,antigravity
 DOMAIN-SUFFIX,challenges.cloudflare.com
 DOMAIN-SUFFIX,livekit.cloud
 DOMAIN-SUFFIX,statsig.com
+# ================= Muse AI =================
+DOMAIN-SUFFIX,muse.ai
+DOMAIN-KEYWORD,muse
+# ================= Meta AI 全家桶防分裂 =================
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,metaaivm.com
+DOMAIN-KEYWORD,metaai
