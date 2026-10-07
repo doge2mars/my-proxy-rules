@@ -1,7 +1,7 @@
 # ====================================================
 # 个人私有全能 AI 平台终极分流规则库 (自动同步合并版)
 # 数据源: blackmatrix7 (OpenAI + Claude + Gemini + Copilot) + 私人专属补丁
-# 规则总条数: 82 条
+# 规则总条数: 83 条
 # ====================================================
 
 DOMAIN,ai.google.dev
@@ -15,6 +15,7 @@ DOMAIN,chat.openai.com.cdn.cloudflare.net
 DOMAIN,copilot.microsoft.com
 DOMAIN,gateway.bingviz.microsoft.net
 DOMAIN,gateway.bingviz.microsoftapp.net
+DOMAIN,graph.facebook.com
 DOMAIN,in.appcenter.ms
 DOMAIN,location.microsoft.com
 DOMAIN,makersuite.google.com
