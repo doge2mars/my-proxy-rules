@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import sys
 import os
+import shutil
 import urllib.request
 import ssl
 from pathlib import Path
@@ -10,6 +11,7 @@ from datetime import datetime, timezone, timedelta
 BASE_DIR = Path(__file__).resolve().parent
 CUSTOM_FILE = BASE_DIR / "custom_ai.list"
 OUTPUT_FILE = BASE_DIR / "AI.list"
+BACKUP_FILE = BASE_DIR / "AI.list.bak"
 TEMP_FILE = BASE_DIR / "AI.list.tmp"
 
 # 2. 上游权威规则库地址 (blackmatrix7)
@@ -27,12 +29,17 @@ VALID_PREFIXES = (
 
 def fetch_rules(name, url):
     print(f"[*] 正在拉取上游规则 [{name}]: {url}")
-    ctx = ssl.create_default_context()
-    ctx.check_hostname = False
-    ctx.verify_mode = ssl.CERT_NONE
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     try:
-        with urllib.request.urlopen(req, context=ctx, timeout=20) as resp:
+        # 默认启用标准 SSL 证书校验，防止中间人劫持；如果遇到缺少本地根证书的环境则自适应降级重试
+        try:
+            resp_ctx = urllib.request.urlopen(req, timeout=20)
+        except ssl.SSLCertVerificationError:
+            print(f"    [!] 警告: 本地未安装系统根证书，临时降级重试拉取 [{name}]...")
+            unverified_ctx = ssl._create_unverified_context()
+            resp_ctx = urllib.request.urlopen(req, context=unverified_ctx, timeout=20)
+
+        with resp_ctx as resp:
             if resp.status != 200:
                 raise RuntimeError(f"HTTP 状态码异常: {resp.status}")
             lines = resp.read().decode('utf-8').splitlines()
@@ -112,10 +119,18 @@ def main():
 
     full_content = "\n".join(header + sorted_rules) + "\n"
 
-    # 5. 原子写入: 先写临时文件，成功后再原子重命名替换
+    # 5. 写入前备份旧版本 + 原子替换
     try:
+        # A. 如果已存在旧文件，先保留一份 .bak，方便一键回滚
+        if OUTPUT_FILE.exists():
+            shutil.copy2(OUTPUT_FILE, BACKUP_FILE)
+            print(f"[*] 已安全备份当前版本至: {BACKUP_FILE.name}")
+
+        # B. 先写临时文件
         with open(TEMP_FILE, "w", encoding="utf-8") as f:
             f.write(full_content)
+        
+        # C. 原子重命名替换
         os.replace(TEMP_FILE, OUTPUT_FILE)
         print(f"[+] 更新大功告成！全量 {len(sorted_rules)} 条清洗规则已安全写入 {OUTPUT_FILE.name}")
     except Exception as e:
