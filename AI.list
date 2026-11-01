@@ -1,13 +1,13 @@
 # ==================================================================
 # 个人私有全能 AI 平台终极分流规则库 (自动化原子构建版)
-# 构建时间: 2026-11-01 18:41:57 (UTC+8)
-# 规则总条数: 112 条
+# 构建时间: 2026-11-01 18:51:24 (UTC+8)
+# 规则总条数: 111 条
 # 数据源统计明细:
 #   - OpenAI              : 35 条
 #   - Claude              : 3 条
 #   - Gemini              : 13 条
 #   - Copilot             : 51 条
-#   - Custom (私人补丁)       : 43 条
+#   - Custom (私人补丁)       : 42 条
 # ==================================================================
 
 DOMAIN,ai.google.dev
@@ -18,7 +18,6 @@ DOMAIN,api.githubcopilot.com
 DOMAIN,api.msn.com
 DOMAIN,api.statsig.com
 DOMAIN,api.together.xyz
-DOMAIN,api.x.ai
 DOMAIN,assets.msn.com
 DOMAIN,browser-intake-datadoghq.com
 DOMAIN,cdn.usefathom.com
