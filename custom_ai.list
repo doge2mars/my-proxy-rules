@@ -1,4 +1,8 @@
-# ================= 私人定制 AI / 编程助手特征补丁 =================
+# ====================================================
+# 私人专属定制 AI / 编程开发补丁 (custom_ai.list)
+# ====================================================
+
+# --- Google Antigravity & AI Studio ---
 DOMAIN-SUFFIX,goog
 DOMAIN-KEYWORD,antigravity
 DOMAIN-KEYWORD,unleash
@@ -6,20 +10,51 @@ DOMAIN-KEYWORD,cloudcode
 DOMAIN-KEYWORD,aicode
 DOMAIN,aicode.googleapis.com
 DOMAIN,daily-cloudcode-pa.googleapis.com
-DOMAIN-SUFFIX,run.app
-DOMAIN-SUFFIX,challenges.cloudflare.com
-DOMAIN-SUFFIX,livekit.cloud
-DOMAIN-SUFFIX,statsig.com
+DOMAIN,aistudio.google.com
+DOMAIN,makersuite.google.com
+DOMAIN,generativelanguage.googleapis.com
 
-# ================= Muse AI =================
+# --- Muse AI ---
 DOMAIN-SUFFIX,muse.ai
 DOMAIN-KEYWORD,muse
 
-# ================= Meta AI 全家桶防分裂 =================
+# --- Meta AI 全家桶防分裂 ---
 DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,metaaivm.com
 DOMAIN-KEYWORD,metaai
 DOMAIN,hatch.metaaivm.com
 DOMAIN,hatch-api.meta.ai
-# Meta AI 专属账号鉴权接口
 DOMAIN,graph.facebook.com
+
+# --- OpenAI / Sora / 鉴权 ---
+DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,challenges.cloudflare.com
+DOMAIN-SUFFIX,livekit.cloud
+DOMAIN-SUFFIX,statsig.com
+DOMAIN-SUFFIX,run.app
+
+# --- AI 编程助手 (Cursor / GitHub Copilot / Windsurf) ---
+DOMAIN,api.githubcopilot.com
+DOMAIN,copilot-proxy.githubusercontent.com
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,windsurf.com
+DOMAIN-SUFFIX,codeium.com
+
+# --- 开源模型与 API 平台 (Hugging Face / OpenRouter / Replicate / Together / Mistral) ---
+DOMAIN-SUFFIX,huggingface.co
+DOMAIN-SUFFIX,hf.co
+DOMAIN-SUFFIX,openrouter.ai
+DOMAIN-SUFFIX,replicate.com
+DOMAIN-SUFFIX,together.ai
+DOMAIN,api.together.xyz
+DOMAIN-SUFFIX,mistral.ai
+DOMAIN-SUFFIX,elevenlabs.io
+
+# --- 顶流独立 AI (Perplexity / Grok / Midjourney / Poe) ---
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,x.ai
+DOMAIN,api.x.ai
+DOMAIN-SUFFIX,midjourney.com
+DOMAIN-SUFFIX,poe.com
