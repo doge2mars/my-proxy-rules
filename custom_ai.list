@@ -1,30 +1,44 @@
 # ====================================================
-# 私人专属定制 AI / 编程开发补丁 (custom_ai.list)
+# 私人专属定制 AI / 编程开发终极补丁 (custom_ai.list)
 # ====================================================
 
-# --- Google Antigravity & AI Studio ---
+# --- Google Antigravity & AI Studio & 全套鉴权 ---
 DOMAIN-SUFFIX,goog
 DOMAIN-KEYWORD,antigravity
+DOMAIN,antigravity.google
+DOMAIN,antigravity.google.com
 DOMAIN-KEYWORD,unleash
 DOMAIN-KEYWORD,cloudcode
 DOMAIN-KEYWORD,aicode
 DOMAIN,aicode.googleapis.com
+DOMAIN,cloudcode-pa.googleapis.com
 DOMAIN,daily-cloudcode-pa.googleapis.com
 DOMAIN,aistudio.google.com
 DOMAIN,makersuite.google.com
 DOMAIN,generativelanguage.googleapis.com
+DOMAIN,aiplatform.googleapis.com
+DOMAIN,iamcredentials.googleapis.com
+DOMAIN,sts.googleapis.com
+DOMAIN,auth.cloud.google
 
-# --- Muse AI ---
+# --- Google 账号与 OAuth 鉴权 (保证 Antigravity 与 Gemini 登录不被截胡) ---
+DOMAIN,accounts.google.com
+DOMAIN,oauth2.googleapis.com
+DOMAIN,www.googleapis.com
+
+# --- Muse AI & Meta AI 全家桶 (含底层通信与账号鉴权) ---
 DOMAIN-SUFFIX,muse.ai
 DOMAIN-KEYWORD,muse
-
-# --- Meta AI 全家桶防分裂 ---
 DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,meta.com
 DOMAIN-SUFFIX,metaaivm.com
 DOMAIN-KEYWORD,metaai
+DOMAIN-KEYWORD,metaclaw
+DOMAIN-KEYWORD,endo
 DOMAIN,hatch.metaaivm.com
 DOMAIN,hatch-api.meta.ai
 DOMAIN,graph.facebook.com
+DOMAIN-SUFFIX,fbcdn.net
 
 # --- OpenAI / Sora / 鉴权 ---
 DOMAIN-SUFFIX,sora.com
