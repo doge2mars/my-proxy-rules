@@ -78,3 +78,8 @@ DOMAIN,edge-stun.facebook.com
 DOMAIN,edge-turn.facebook.com
 DOMAIN,stun.facebook.com
 DOMAIN,turn.facebook.com
+# --- Meta AI 实时语音 WebRTC 物理传输 IP 段 (防无域名纯 UDP 直连) ---
+IP-CIDR,31.13.64.0/18,no-resolve
+IP-CIDR,57.144.0.0/16,no-resolve
+IP-CIDR,57.141.0.0/14,no-resolve
+IP-CIDR,157.240.0.0/16,no-resolve
