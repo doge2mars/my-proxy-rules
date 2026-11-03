@@ -1,13 +1,13 @@
 # ==================================================================
 # 个人私有全能 AI 平台终极分流规则库 (自动化原子构建版)
-# 构建时间: 2026-11-03 21:43:31 (UTC+8)
-# 规则总条数: 131 条
+# 构建时间: 2026-11-03 23:07:10 (UTC+8)
+# 规则总条数: 135 条
 # 数据源统计明细:
 #   - OpenAI              : 35 条
 #   - Claude              : 3 条
 #   - Gemini              : 13 条
 #   - Copilot             : 51 条
-#   - Custom (私人补丁)       : 62 条
+#   - Custom (私人补丁)       : 66 条
 # ==================================================================
 
 DOMAIN,accounts.google.com
@@ -139,5 +139,9 @@ DOMAIN-SUFFIX,windsurf.com
 DOMAIN-SUFFIX,x.ai
 IP-ASN,14061,no-resolve
 IP-ASN,20473,no-resolve
+IP-CIDR,157.240.0.0/16,no-resolve
 IP-CIDR,24.199.123.28/32,no-resolve
+IP-CIDR,31.13.64.0/18,no-resolve
+IP-CIDR,57.141.0.0/14,no-resolve
+IP-CIDR,57.144.0.0/16,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
