@@ -1,13 +1,13 @@
 # ==================================================================
 # 个人私有全能 AI 平台终极分流规则库 (自动化原子构建版)
-# 构建时间: 2026-11-03 08:57:14 (UTC+8)
-# 规则总条数: 125 条
+# 构建时间: 2026-11-03 21:43:31 (UTC+8)
+# 规则总条数: 131 条
 # 数据源统计明细:
 #   - OpenAI              : 35 条
 #   - Claude              : 3 条
 #   - Gemini              : 13 条
 #   - Copilot             : 51 条
-#   - Custom (私人补丁)       : 56 条
+#   - Custom (私人补丁)       : 62 条
 # ==================================================================
 
 DOMAIN,accounts.google.com
@@ -31,6 +31,8 @@ DOMAIN,cloudcode-pa.googleapis.com
 DOMAIN,copilot-proxy.githubusercontent.com
 DOMAIN,copilot.microsoft.com
 DOMAIN,daily-cloudcode-pa.googleapis.com
+DOMAIN,edge-stun.facebook.com
+DOMAIN,edge-turn.facebook.com
 DOMAIN,gateway.bingviz.microsoft.net
 DOMAIN,gateway.bingviz.microsoftapp.net
 DOMAIN,generativelanguage.googleapis.com
@@ -52,7 +54,9 @@ DOMAIN,self.events.data.microsoft.com
 DOMAIN,services.bingapis.com
 DOMAIN,static.cloudflareinsights.com
 DOMAIN,sts.googleapis.com
+DOMAIN,stun.facebook.com
 DOMAIN,sydney.bing.com
+DOMAIN,turn.facebook.com
 DOMAIN,www.bing.com
 DOMAIN,www.googleapis.com
 DOMAIN-KEYWORD,aicode
@@ -62,6 +66,7 @@ DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,endo
 DOMAIN-KEYWORD,generativelanguage
+DOMAIN-KEYWORD,meta-ai
 DOMAIN-KEYWORD,metaai
 DOMAIN-KEYWORD,metaclaw
 DOMAIN-KEYWORD,muse
@@ -104,6 +109,7 @@ DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN-SUFFIX,livekit.cloud
+DOMAIN-SUFFIX,meta-ai-realtime.facebook.com
 DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,meta.com
 DOMAIN-SUFFIX,metaaivm.com
