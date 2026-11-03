@@ -71,3 +71,10 @@ DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,midjourney.com
 DOMAIN-SUFFIX,poe.com
+# --- Meta AI 实时语音与 WebRTC 通信 (Muse 语音专属) ---
+DOMAIN-KEYWORD,meta-ai
+DOMAIN-SUFFIX,meta-ai-realtime.facebook.com
+DOMAIN,edge-stun.facebook.com
+DOMAIN,edge-turn.facebook.com
+DOMAIN,stun.facebook.com
+DOMAIN,turn.facebook.com
