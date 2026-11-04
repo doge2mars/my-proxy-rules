@@ -1,8 +1,8 @@
 # > GoFilm & LunaTV Domestic Direct Media Rules
-# Updated: 2026-11-04 (Added resilient keyword matching & 360zyx/guoluche streaming CDNs)
-# Total root domains: 89
+# Updated: 2026-11-04 (Added ikun, ryplay, modujx, dytt, tyyszy CDN/image keywords)
+# Total root domains: 96
 
-# === [1. 高优先级核心采集站与切片CDN关键字通配 (杜绝漏网)] ===
+# === [1. 高优先级核心采集站与切片CDN关键字通配 (通杀所有衍生CDN/图床)] ===
 DOMAIN-KEYWORD,360zy
 DOMAIN-KEYWORD,baofeng
 DOMAIN-KEYWORD,bfeng
@@ -12,17 +12,19 @@ DOMAIN-KEYWORD,bfzy
 DOMAIN-KEYWORD,bvvvv
 DOMAIN-KEYWORD,dbzy
 DOMAIN-KEYWORD,ddbbff
-DOMAIN-KEYWORD,dyttzy
+DOMAIN-KEYWORD,dytt
 DOMAIN-KEYWORD,fengbao
+DOMAIN-KEYWORD,fffgood
 DOMAIN-KEYWORD,ffzy
 DOMAIN-KEYWORD,guangsu
 DOMAIN-KEYWORD,guoluche
 DOMAIN-KEYWORD,hhzy
-DOMAIN-KEYWORD,hongniuzy
-DOMAIN-KEYWORD,ikunzy
+DOMAIN-KEYWORD,hongniu
+DOMAIN-KEYWORD,ikun
 DOMAIN-KEYWORD,imgzy
 DOMAIN-KEYWORD,iqiyizy
 DOMAIN-KEYWORD,jinyingzy
+DOMAIN-KEYWORD,jisuimage
 DOMAIN-KEYWORD,lovedan
 DOMAIN-KEYWORD,lzcaiji
 DOMAIN-KEYWORD,lzzy
@@ -30,19 +32,26 @@ DOMAIN-KEYWORD,maotaizy
 DOMAIN-KEYWORD,maoyanapi
 DOMAIN-KEYWORD,maoyanzy
 DOMAIN-KEYWORD,mdzy
+DOMAIN-KEYWORD,modujx
 DOMAIN-KEYWORD,moduzy
 DOMAIN-KEYWORD,okzy
 DOMAIN-KEYWORD,p2100
+DOMAIN-KEYWORD,picbf
 DOMAIN-KEYWORD,rrcdnbf
 DOMAIN-KEYWORD,rycj
+DOMAIN-KEYWORD,ryplay
 DOMAIN-KEYWORD,ryzy
 DOMAIN-KEYWORD,subozy
 DOMAIN-KEYWORD,suoniapi
+DOMAIN-KEYWORD,tyyszy
 DOMAIN-KEYWORD,ukuapi
 DOMAIN-KEYWORD,ukuzy
+DOMAIN-KEYWORD,viptulz
 DOMAIN-KEYWORD,wolongzy
 DOMAIN-KEYWORD,wujinzy
 DOMAIN-KEYWORD,xinlangapi
+DOMAIN-KEYWORD,xinlangtupian
+DOMAIN-KEYWORD,xltupian
 DOMAIN-KEYWORD,zuidapi
 
 # === [2. 具体域名后缀列表 (DOMAIN-SUFFIX)] ===
@@ -70,7 +79,9 @@ DOMAIN-SUFFIX,dbzy5.com
 DOMAIN-SUFFIX,ddbbffcdn.com
 DOMAIN-SUFFIX,doubanio.com
 DOMAIN-SUFFIX,dytt-img.com
+DOMAIN-SUFFIX,dytt-movies.com
 DOMAIN-SUFFIX,dytt-tupian.com
+DOMAIN-SUFFIX,dytt-tv.com
 DOMAIN-SUFFIX,dyttzyapi.com
 DOMAIN,live.yang-1989.eu.org
 DOMAIN-SUFFIX,fengbao10.com
@@ -88,6 +99,7 @@ DOMAIN-SUFFIX,hhzyapi.com
 DOMAIN-SUFFIX,hongniuzy.com
 DOMAIN-SUFFIX,hongniuzy2.com
 DOMAIN-SUFFIX,hongniuzyimage.com
+DOMAIN-SUFFIX,ikunpicvrfmn.com
 DOMAIN-SUFFIX,ikunzy.com
 DOMAIN-SUFFIX,ikunzyapi.com
 DOMAIN-SUFFIX,imgzy360.com
@@ -106,6 +118,7 @@ DOMAIN-SUFFIX,mdzyapi.com
 DOMAIN-SUFFIX,mdzypic.com
 DOMAIN-SUFFIX,moduapi.cc
 DOMAIN-SUFFIX,modujx11.com
+DOMAIN-SUFFIX,modujx12.com
 DOMAIN-SUFFIX,modujx17.com
 DOMAIN-SUFFIX,moduzy.net
 DOMAIN-SUFFIX,mtzy.me
@@ -120,9 +133,12 @@ DOMAIN-SUFFIX,rrcdnbf5.com
 DOMAIN-SUFFIX,rrcdnbf6.com
 DOMAIN-SUFFIX,rstu6.com
 DOMAIN-SUFFIX,rycjapi.com
+DOMAIN-SUFFIX,ryplay7.com
+DOMAIN-SUFFIX,ryplay9.com
 DOMAIN-SUFFIX,ryzyw.com
 DOMAIN-SUFFIX,subocaiji.com
 DOMAIN-SUFFIX,subozy.com
+DOMAIN-SUFFIX,tyyszy.com
 DOMAIN-SUFFIX,ukuapi88.com
 DOMAIN-SUFFIX,ukuzy.com
 DOMAIN-SUFFIX,viptulz.com
