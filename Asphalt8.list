@@ -1,0 +1,25 @@
+# > Asphalt 8 (狂野飙车8) & Gameloft 游戏专项分流规则
+# 维护仓库: doge2mars/my-proxy-rules
+# 作用: 保证大厅登录 (gameloft.com) 与对战房间 (AWS 美东纯IP服务器) 100% 走同一出口，彻底解决断线与异地封号
+
+# === [1. Gameloft 大厅、匹配与 API 域名] ===
+DOMAIN-SUFFIX,gameloft.com
+DOMAIN-SUFFIX,gameloft.net
+DOMAIN-SUFFIX,gameloftbroadcast.com
+DOMAIN-SUFFIX,gameloft-cdn.com
+DOMAIN-SUFFIX,gameloft.it
+DOMAIN-SUFFIX,gameloft-sns.com
+DOMAIN-KEYWORD,gameloft
+DOMAIN-KEYWORD,asphalt8
+
+# === [2. Gameloft A8 多人房间集群 (AWS 美东对战服务器网段与高频IP)] ===
+# 实测捕获端口: 33052, 33098, 35893 等高位对战房
+IP-CIDR,100.59.0.0/16,no-resolve
+IP-CIDR,100.31.0.0/16,no-resolve
+IP-CIDR,100.51.0.0/16,no-resolve
+IP-CIDR,18.232.0.0/14,no-resolve
+IP-CIDR,54.88.0.0/16,no-resolve
+IP-CIDR,54.208.0.0/13,no-resolve
+IP-CIDR,52.0.0.0/11,no-resolve
+IP-CIDR,3.80.0.0/12,no-resolve
+IP-CIDR,3.208.0.0/12,no-resolve
