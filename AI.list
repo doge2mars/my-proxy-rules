@@ -1,13 +1,13 @@
 # ==================================================================
 # 个人私有全能 AI 平台终极分流规则库 (自动化原子构建版)
-# 构建时间: 2026-11-21 08:59:05 (UTC+8)
-# 规则总条数: 135 条
+# 构建时间: 2026-11-21 16:57:12 (UTC+8)
+# 规则总条数: 138 条
 # 数据源统计明细:
 #   - OpenAI              : 35 条
 #   - Claude              : 3 条
 #   - Gemini              : 13 条
 #   - Copilot             : 51 条
-#   - Custom (私人补丁)       : 66 条
+#   - Custom (私人补丁)       : 69 条
 # ==================================================================
 
 DOMAIN,accounts.google.com
@@ -64,9 +64,12 @@ DOMAIN-KEYWORD,antigravity
 DOMAIN-KEYWORD,cloudcode
 DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
+DOMAIN-KEYWORD,edge-star
 DOMAIN-KEYWORD,endo
+DOMAIN-KEYWORD,genai
 DOMAIN-KEYWORD,generativelanguage
 DOMAIN-KEYWORD,meta-ai
+DOMAIN-KEYWORD,meta-genai
 DOMAIN-KEYWORD,metaai
 DOMAIN-KEYWORD,metaclaw
 DOMAIN-KEYWORD,muse
