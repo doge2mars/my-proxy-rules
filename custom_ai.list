@@ -88,3 +88,14 @@ IP-CIDR,157.240.0.0/16,no-resolve
 DOMAIN-KEYWORD,genai
 DOMAIN-KEYWORD,meta-genai
 DOMAIN-KEYWORD,edge-star
+
+# --- Google Gemini & Robin 移动端专属补全 (彻底解决异地 Token 冲突) ---
+DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
+DOMAIN-SUFFIX,signaler-pa.googleapis.com
+DOMAIN-SUFFIX,notifications-pa.googleapis.com
+DOMAIN-SUFFIX,oauthaccountmanager.googleapis.com
+DOMAIN-KEYWORD,gemini
+DOMAIN-KEYWORD,generativeai
+# --- Meta Muse 移动端连通性握手端点补全 ---
+DOMAIN,www.facebook.com
+DOMAIN,m.facebook.com
