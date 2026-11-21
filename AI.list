@@ -1,13 +1,13 @@
 # ==================================================================
 # 个人私有全能 AI 平台终极分流规则库 (自动化原子构建版)
-# 构建时间: 2026-11-21 16:57:12 (UTC+8)
-# 规则总条数: 138 条
+# 构建时间: 2026-11-21 17:44:26 (UTC+8)
+# 规则总条数: 146 条
 # 数据源统计明细:
 #   - OpenAI              : 35 条
 #   - Claude              : 3 条
 #   - Gemini              : 13 条
 #   - Copilot             : 51 条
-#   - Custom (私人补丁)       : 69 条
+#   - Custom (私人补丁)       : 77 条
 # ==================================================================
 
 DOMAIN,accounts.google.com
@@ -42,6 +42,7 @@ DOMAIN,hatch.metaaivm.com
 DOMAIN,iamcredentials.googleapis.com
 DOMAIN,in.appcenter.ms
 DOMAIN,location.microsoft.com
+DOMAIN,m.facebook.com
 DOMAIN,makersuite.google.com
 DOMAIN,oauth2.googleapis.com
 DOMAIN,odc.officeapps.live.com
@@ -58,6 +59,7 @@ DOMAIN,stun.facebook.com
 DOMAIN,sydney.bing.com
 DOMAIN,turn.facebook.com
 DOMAIN,www.bing.com
+DOMAIN,www.facebook.com
 DOMAIN,www.googleapis.com
 DOMAIN-KEYWORD,aicode
 DOMAIN-KEYWORD,antigravity
@@ -66,7 +68,9 @@ DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,edge-star
 DOMAIN-KEYWORD,endo
+DOMAIN-KEYWORD,gemini
 DOMAIN-KEYWORD,genai
+DOMAIN-KEYWORD,generativeai
 DOMAIN-KEYWORD,generativelanguage
 DOMAIN-KEYWORD,meta-ai
 DOMAIN-KEYWORD,meta-genai
@@ -119,8 +123,10 @@ DOMAIN-SUFFIX,metaaivm.com
 DOMAIN-SUFFIX,midjourney.com
 DOMAIN-SUFFIX,mistral.ai
 DOMAIN-SUFFIX,muse.ai
+DOMAIN-SUFFIX,notifications-pa.googleapis.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,oauthaccountmanager.googleapis.com
 DOMAIN-SUFFIX,observeit.net
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
@@ -130,9 +136,11 @@ DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,replicate.com
+DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
 DOMAIN-SUFFIX,run.app
 DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,signaler-pa.googleapis.com
 DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,statsig.com
 DOMAIN-SUFFIX,stripe.com
