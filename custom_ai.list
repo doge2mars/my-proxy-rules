@@ -83,3 +83,8 @@ IP-CIDR,31.13.64.0/18,no-resolve
 IP-CIDR,57.144.0.0/16,no-resolve
 IP-CIDR,57.141.0.0/14,no-resolve
 IP-CIDR,157.240.0.0/16,no-resolve
+
+# --- Meta GenAI 实时语音与边缘服务 (Muse 核心补充 - 2026-11-21) ---
+DOMAIN-KEYWORD,genai
+DOMAIN-KEYWORD,meta-genai
+DOMAIN-KEYWORD,edge-star
